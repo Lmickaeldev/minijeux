@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoltLab (HTML/CSS/JS pur)</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+</head>
+
+<body>
+    <h1 class="title">Training VoltLab ATM</h1> 
+    <div class="wrapper">
+        <div class="grid"></div>
+        <div class="hud">
+            <div>
+                <div class="display" id="targetDisp">000</div>
+                <div class="label">TARGET</div>
+            </div>
+        </div>
+        <div class="left-col" id="leftCol"></div>
+        <div class="right-col" id="rightCol"></div>
+        <svg id="wires"></svg>
+        <div class="result-box">
+            <div class="display-green" id="resultDisp">000</div>
+            <div class="label-green">RESULT</div>
+        </div>
+        
+        <div class="controls">
+            <button class="secondary" id="resetBtn">Reset</button>
+            <button id="refreshBtn">Nouvelle Partie</button>
+        </div>
+    </div>
+        <div class="gta-hud-fixed">
+            <div class="hud-bottom-bar">
+                <span class="key">↵</span> pour selectionner |
+                <span class="key">↑</span><span class="key">↓</span><span class="key">←</span><span class="key">→</span> pour
+                naviguer
+            </div>
+
+        </div>
+
+
+
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>
