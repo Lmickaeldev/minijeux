@@ -9,9 +9,9 @@ function generateRandomSet(size = 3, min = 1, max = 9) {
 // Valeurs fixes pour les multiplicateurs et leurs icônes
 const multiplierValues = [1, 2, 10];
 const multiplierIcons = {
-  1: "/assets/icons/mult-1.webp",
-  2: "/assets/icons/mult-2.webp",
-  10: "/assets/icons/mult-10.webp",
+  1: "./assets/icons/mult-1.webp",
+  2: "./assets/icons/mult-2.webp",
+  10: "./assets/icons/mult-10.webp",
 };
 
 const numbersLeft = generateRandomSet(3, 1, 30);
