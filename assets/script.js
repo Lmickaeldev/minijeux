@@ -7,15 +7,22 @@ function generateRandomSet(size = 3, min = 1, max = 9) {
 }
 
 // Valeurs fixes pour les multiplicateurs et leurs icônes
-const multiplierValues = [1, 2, 10];
+const multiplierValues = [1, 2, 10,100,50];
 const multiplierIcons = {
   1: "./assets/icons/mult-1.webp",
   2: "./assets/icons/mult-2.webp",
   10: "./assets/icons/mult-10.webp",
+  100: "./assets/icons/mult-100.webp",
+  50: "./assets/icons/mult-50.webp"
 };
 
-const numbersLeft = generateRandomSet(3, 1, 30);
-const shuffledMultipliers = shuffle([...multiplierValues]); // visuel
+const numbersLeft = generateRandomSet(3, 0, 9);
+const shuffledMultipliers = shuffle(
+  generateRandomSet(3, 0, multiplierValues.length - 1).map(
+    (i) => multiplierValues[i]
+  )
+);
+ // visuel
 const colors = ["#ffcc00", "#ff3355", "#3366ff"];
 
 // ⛓️ mapping logique aléatoire (0→2, 1→0, etc.)
